@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Forest Adventure</title>
+		<link href='styles/forest-style.css' rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
+		<link rel="icon" href="assets/evergreen-tree_1f332.png"/>
+
+		<script>
+			function inputController(){
+				if (input.value == 'fish'){
+					parent.location='Ending-C.html';
+				}
+				else {
+					parent.location='Ending-B.html';
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class='container-head'>
+			<h1 class='lobster-two'> Scene Three: Feed the Cat </h1>
+			<p class='source-sans-pro'> Choose the correct option to advance through the forest. </p>
+		</div>
+		<br>
+
+		<img src="assets/jeffrey-workman-YvkH8R1zoQM-unsplash.jpg" class='side-img'>
+
+		<div class='choice-box'>
+			<p class='source-sans-pro-reg choice-text'> You decide to feed the cat. But... you don't have anything on you. Maybe <b> something nearby</b> would work. </p>
+			<div>
+				<label class='source-sans-pro-reg choice-text'> Enter: </label>
+				<input class='source-sans-pro-reg choice-text' type="text" id='input'>
+				<input class='source-sans-pro-reg choice-text' type="button" value='Submit' onClick="inputController()">
+			</div>
+		</div>
+	</body>
+</html>

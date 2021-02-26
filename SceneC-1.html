@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Forest Adventure</title>
+		<link href='styles/forest-style.css' rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
+		<link rel="icon" href="assets/evergreen-tree_1f332.png"/>
+
+		<script>
+			function inputController(){
+				if (approach.checked){
+					parent.location="Ending-E.html";
+				}
+				else {
+					parent.location="Ending-D.html";
+				}
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class='container-head'>
+			<h1 class='lobster-two'> Scene Three: Stranger </h1>
+			<p class='source-sans-pro'> Choose the correct option to advance through the forest. </p>
+		</div><br>
+		<img src="assets/andreas-dress-YapFb3GCdDI-unsplash.jpg" class='side-img'>
+
+		<div class='choice-box'>
+			<p class='source-sans-pro-reg choice-text'> You take a closer look at the water, and don't notice anything strange. But before you make your decision, you notice a stranger sitting nearby. Should you <b>approach the stranger</b> or <b> avoid the stranger</b>? </p>
+
+			<div>
+				<label class='source-sans-pro-reg choice-text'> Select: </label>
+				<br>
+				<input type="radio" id='approach' name='choice' value='approach'>
+				<label class='source-sans-pro-reg choice-text'> Approach </label>
+				<br>
+				<input type="radio" id='avoid' name='choice' value='avoid'>
+				<label class='source-sans-pro-reg choice-text'> Avoid </label>
+				<br><br>
+				<input type="button" onClick="inputController()" value='Go'class='source-sans-pro-reg'>
+			</div>
+		</div>
+
+
+
+
+	</body>
+</html>

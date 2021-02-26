@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title> Forest Adventure </title>
+		<link href='styles/forest-style.css' rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
+		<link rel="icon" href="assets/evergreen-tree_1f332.png"/>
+
+		<script>
+			function inputController(){
+				if(left.checked){
+					parent.location="sceneB-1.html";
+				}
+				else{
+					parent.location="sceneB-2.html";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class='container-head'>
+			<h1 class='lobster-two'> Scene One: Path </h1>
+			<p class='source-sans-pro'> Choose the correct option to advance through the forest. </p>
+		</div>
+		<div class='container-line'>
+			<br>
+		</div>
+			
+			<img src="assets/jens-lelie-u0vgcIOQG08-unsplash.jpg" class='side-img'>
+	
+
+		<div class='choice-box'>
+			<p class='source-sans-pro-reg choice-text'> You encounter two paths, one leading to the <b>left</b> of the forest, and one to the <b>right</b>. </p>
+			<div>
+				<label class='source-sans-pro-reg choice-text'>Select a path</label>
+				<br>
+				<input type="radio" id='left' name='choice' value='left'>
+				<label class='source-sans-pro-reg choice-text'> Left path </label>
+				<br>
+				<input type="radio" id='right' name='choice' value='right'>
+				<label class='source-sans-pro-reg choice-text'> Right Path </label>
+				<br><br>
+				<input class='source-sans-pro-reg' type="button" onClick="inputController()" value='Go'>
+				<br>
+			</div>
+		</div>
+
+	</body>
+</html>
