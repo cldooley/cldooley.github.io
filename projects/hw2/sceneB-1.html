@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Forest Adventure</title>
+		<link href='styles/forest-style.css' rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
+		<link rel="icon" href="assets/evergreen-tree_1f332.png"/>
+
+		<script>
+			function inputController(){
+				if (drink.checked){
+					parent.location="Ending-A.html";
+				}
+				else{
+					parent.location="SceneC-1.html";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class='container-head'>
+			<h1 class='lobster-two'> Scene Two: Creek </h1>
+			<p class='source-sans-pro'> Choose the correct option to advance through the forest. </p>
+			
+		</div><br>
+		<img src="assets/dylan-luder-zwXN18VUxRs-unsplash.jpg" class='side-img'>
+
+		<div class='choice-box'>
+			<p class='source-sans-pro-reg choice-text'> You find a quiet creek and look into the water. It looks clean enough, and you're feeling a little thirsty. Should you <b>drink the water</b> or <b>inspect it a little closer</b>? </p>
+			<div>
+				<label class='choice-text source-sans-pro-reg'> Select: </label>
+				<br>
+				<input type="radio" id='drink' name='choice' value='drink'>
+				<label class='choice-text source-sans-pro-reg'> Drink the water </label>
+				<br>
+				<input type="radio" id='inspect' name='choice' value='inspect'>
+				<label class='choice-text source-sans-pro-reg'> Inspect the water </label>
+				<br><br>
+				<input type="button" onClick="inputController()" value='Continue' class='source-sans-pro-reg'>
+			</div>
+		</div>
+	</body>
+</html>

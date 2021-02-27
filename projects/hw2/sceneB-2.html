@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Forest Adventure</title>
+		<link href='styles/forest-style.css' rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
+		<link rel="icon" href="assets/evergreen-tree_1f332.png"/>
+
+		<script>
+			function inputController(){
+				if (pet.checked && feed.checked){
+					parent.location='SceneC-2.html';
+				}
+				else{
+					parent.location='Ending-B.html';
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class='container-head'>
+			<h1 class='lobster-two'> Scene Two: Feline Friend </h1>
+			<p class='source-sans-pro'> Choose the correct option to advance through the forest. </p>
+		</div>
+		<br>
+		<img src="assets/yuyi-olulu--F4KcXvj1PI-unsplash.jpg" class='side-img'>
+
+		<div class='choice-box'>
+			<p class='source-sans-pro-reg choice-text'> You meet a friendly looking cat at what seems to be the end of the path. It looks like it's waiting for you to <b>do something</b>. You may choose <b>more than one</b> option. </p>
+
+			<div>
+				<label class='source-sans-pro-reg choice-text'>Select: </label>
+				<br> 
+				<input type="checkbox" id='pet' name='choice' value='pet'>
+				<label class='source-sans-pro-reg choice-text'>Pet the cat</label>
+				<br>
+				<input type="checkbox" id='feed' name='choice' value='feed'>
+				<label class='source-sans-pro-reg choice-text'>Feed the cat</label>
+				<br>
+				<input type="checkbox" id='nothing' name='choice' value='nothing'>
+				<label class='source-sans-pro-reg choice-text'>Do nothing</label>
+				<br><br>
+				<input type="button" onClick="inputController()" value= 'Continue' class='source-sans-pro-reg'>
+			</div>
+		</div>
+
+
+
+
+	</body>
+</html>

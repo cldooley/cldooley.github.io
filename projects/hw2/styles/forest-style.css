@@ -1,0 +1,83 @@
+body {
+	background-color: #f5f5f5;
+}
+
+.lobster-two {
+	font-family: 'Lobster Two', cursive;
+}
+
+.source-sans-pro {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: italic; 
+}
+
+.source-sans-pro-reg {
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.center-text {
+	text-align: center;
+}
+
+.choice-text {
+	font-size: 19px;
+}
+
+.center-img {
+	
+	padding:1%;
+	float: left;
+	width: 48%;
+}
+.start-box {
+	padding: 5%;
+
+	
+}
+
+.start-hr {
+	width: 25%;
+}
+
+.side-img {
+	float: left;
+	width:48%;
+	padding:1%;
+}
+
+.choice-box {
+	float: right;
+	width: 48%;
+	padding:1%;
+}
+.center-button {
+	display: block;
+	margin: auto;
+	width:5%;
+}
+
+.container-head {
+	width:95%;
+	background: white;
+	padding: 15px;
+	display: block;
+	margin: auto;
+	outline-width: 5px ;
+	outline-style: solid;
+	outline-color: #8ca891;
+	
+}
+
+/*.container-line {
+	width: 97%;
+	background: #8ca891;
+	margin-bottom: 10px;
+	padding: 1px;
+	display: block;
+	margin: auto;
+	outline-width: 2px ;
+	outline-style: solid;
+	outline-color: #8ca891;
+}
+*/
